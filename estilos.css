@@ -1,0 +1,235 @@
+/* estilo.css - Hoja de estilos para los ejercicios de Diego Castillo */
+
+/* Estilos globales y reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del encabezado principal */
+h1 {
+    color: #2c3e50;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    font-size: 1.8rem;
+}
+
+h1:first-of-type {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2980b9;
+    border-bottom: none;
+    margin-bottom: 30px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para enlaces */
+a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #3498db;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor para los enlaces */
+.enlaces-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+/* Estilos para formularios */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para entrada de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Estilos para botones */
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para checkbox y radio buttons */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Contenedor para secciones */
+.seccion {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h1:first-of-type {
+        font-size: 1.8rem;
+    }
+    
+    form {
+        padding: 15px;
+    }
+    
+    input[type="text"], input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+/* Estilos específicos para cada sección de formulario */
+.area-triangulo,
+.promedio-notas,
+.promedio-validado,
+.promedio-aprobacion,
+.calculo-sueldo,
+.volumen-piramide,
+.color-favorito,
+.lenguaje-preferencia {
+    margin-top: 20px;
+    border-left: 4px solid;
+    padding-left: 15px;
+}
+
+.area-triangulo { border-color: #e74c3c; }
+.promedio-notas { border-color: #f39c12; }
+.promedio-validado { border-color: #27ae60; }
+.promedio-aprobacion { border-color: #8e44ad; }
+.calculo-sueldo { border-color: #3498db; }
+.volumen-piramide { border-color: #16a085; }
+.color-favorito { border-color: #d35400; }
+.lenguaje-preferencia { border-color: #2c3e50; }
+
+/* Etiquetas para formularios */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Contenedor para el color y lenguaje */
+.opciones-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.opcion:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
